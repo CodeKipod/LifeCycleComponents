@@ -11,6 +11,19 @@ namespace Roman.Ambinder.LifeCycleComponents.Disposable
         private readonly ConcurrentDictionary<string, OrderWrapper<IDisposable>>
             _relatedComponents = new ConcurrentDictionary<string, OrderWrapper<IDisposable>>();
 
+        public DisposableComponentsContainer() { }
+
+        public DisposableComponentsContainer(params IDisposable[] disposableComponents)
+        {
+            if (disposableComponents != null && disposableComponents.Length > 0)
+            {
+                foreach (var component in disposableComponents)
+                {
+                    RegisterForLifeCycleEvents(component);
+                }
+            }
+        }
+
         public TComponent RegisterForLifeCycleEvents<TComponent>(TComponent component,
             in int startStopOrder = 0)
             where TComponent : IDisposable
