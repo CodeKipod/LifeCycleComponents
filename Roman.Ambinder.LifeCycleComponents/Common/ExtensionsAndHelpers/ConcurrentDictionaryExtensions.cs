@@ -10,6 +10,7 @@ namespace Roman.Ambinder.LifeCycleComponents.Common.ExtensionsAndHelpers
             var typeName = typeof(T).FullName;
             var key = typeName;
             var prefixCounter = 1;
+            // ReSharper disable once AssignNullToNotNullAttribute
             while (!target.TryAdd(key, instance))
             {
                 key = $"{typeName} {++prefixCounter}";

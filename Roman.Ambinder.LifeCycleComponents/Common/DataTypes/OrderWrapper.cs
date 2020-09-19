@@ -1,5 +1,6 @@
 ﻿namespace Roman.Ambinder.LifeCycleComponents.Common.DataTypes
 {
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Performance", "U2U1004:Public value types should implement equality", Justification = "<Pending>")]
     public readonly struct OrderWrapper<T>
     {
         public OrderWrapper(T value, int order = 0)
