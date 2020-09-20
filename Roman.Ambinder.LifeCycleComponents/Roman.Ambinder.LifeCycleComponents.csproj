@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Roman Ambinder</Authors>
+    <Copyright>Roman Ambinder</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/CodeKipod/LifeCycleComponents</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/CodeKipod/LifeCycleComponents</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <Description>Objects' life cycle mangement facilities</Description>
+    <PackageTags>LifeCycle</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

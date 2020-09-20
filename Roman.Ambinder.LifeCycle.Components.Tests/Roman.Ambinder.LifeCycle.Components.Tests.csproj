@@ -17,4 +17,9 @@
     <ProjectReference Include="..\Roman.Ambinder.LifeCycleComponents\Roman.Ambinder.LifeCycleComponents.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InitDisposable\" />
+    <Folder Include="StartStopDisposable\" />
+  </ItemGroup>
+
 </Project>
