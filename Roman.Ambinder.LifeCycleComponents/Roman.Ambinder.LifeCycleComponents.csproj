@@ -12,10 +12,12 @@
     <RepositoryType>Github</RepositoryType>
     <Description>Objects' life cycle mangement facilities</Description>
     <PackageTags>LifeCycle</PackageTags>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Nuggets update</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Roman.Ambinder.DataTypes.OperationResults" Version="1.1.0" />
+    <PackageReference Include="Roman.Ambinder.DataTypes.OperationResults" Version="1.1.2" />
   </ItemGroup>
 
 </Project>
