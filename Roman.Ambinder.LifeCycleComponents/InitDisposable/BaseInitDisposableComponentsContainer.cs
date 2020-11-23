@@ -19,7 +19,7 @@ namespace Roman.Ambinder.LifeCycleComponents.InitDisposable
             where TComponent : IInitDisposableComponent
         {
             if (component != null)
-                _relatedComponents.AddWithTypeBasedUniqueKey(
+                _relatedComponents.AddWithTypeBasedOnUniqueKey(
                     new OrderWrapper<IInitDisposableComponent>(component, startStopOrder));
 
             return component;

@@ -29,7 +29,7 @@ namespace Roman.Ambinder.LifeCycleComponents.Disposable
             where TComponent : IDisposable
         {
             if (component != null)
-                _relatedComponents.AddWithTypeBasedUniqueKey(
+                _relatedComponents.AddWithTypeBasedOnUniqueKey(
                     new OrderWrapper<IDisposable>(component, startStopOrder));
 
             return component;

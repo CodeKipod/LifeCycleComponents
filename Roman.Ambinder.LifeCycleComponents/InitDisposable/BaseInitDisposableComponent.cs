@@ -18,6 +18,6 @@ namespace Roman.Ambinder.LifeCycleComponents.InitDisposable
                 OnTryInit(args);
         }
 
-        protected abstract OperationResult OnTryInit(string[] args);
+        protected abstract OperationResult OnTryInit(params string[] args);
     }
 }

@@ -18,15 +18,16 @@ namespace Roman.Ambinder.LifeCycleComponents.StartStopDisposable
             where TComponent : IStartStopDisposableComponent
         {
             if (component != null)
-                _relatedComponents.AddWithTypeBasedUniqueKey(
+                _relatedComponents.AddWithTypeBasedOnUniqueKey(
                     new OrderWrapper<IStartStopDisposableComponent>(component, startStopOrder));
 
             return component;
         }
 
-        protected virtual OperationResult BeforeTryStart(params string[] args) => OperationResult.Successful;
+        protected virtual OperationResult BeforeTryStart(params string[] args) 
+            => OperationResult.Successful;
 
-        protected sealed override OperationResult OnTryStart(string[] args)
+        protected sealed override OperationResult OnTryStart(params string[] args)
         {
             var opRes = BeforeTryStart(args);
             if (!opRes) return opRes;
@@ -41,7 +42,8 @@ namespace Roman.Ambinder.LifeCycleComponents.StartStopDisposable
             return AfterTryStart(args);
         }
 
-        protected virtual OperationResult AfterTryStart(params string[] args) => OperationResult.Successful;
+        protected virtual OperationResult AfterTryStart(params string[] args)
+            => OperationResult.Successful;
 
         protected virtual void OnBeforeStop()
         {

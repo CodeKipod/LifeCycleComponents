@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -12,7 +12,7 @@
     <RepositoryType>Github</RepositoryType>
     <Description>Objects' life cycle mangement facilities</Description>
     <PackageTags>LifeCycle</PackageTags>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageReleaseNotes>Nuggets update</PackageReleaseNotes>
   </PropertyGroup>
 
